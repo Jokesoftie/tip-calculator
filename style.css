@@ -150,10 +150,15 @@ span {
   }
 
   .tip-percentage-box {
-    grid-template-columns: repeat(2, 80px);
+    grid-template-columns: repeat(2, 150px);
     gap: 20px;
   }
   .tips-page {
     padding: 1rem;
+  }
+}
+@media screen and (max-width: 320px){
+  .tip-percentage-box{
+    grid-template-columns: repeat(2,80px);
   }
 }
