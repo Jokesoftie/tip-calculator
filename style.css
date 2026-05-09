@@ -60,6 +60,7 @@ input::-webkit-inner-spin-button {
   width: 250px;
   height: 30px;
   border-radius: 5px;
+  margin-bottom: 1rem;
 }
 .tip {
   margin-bottom: 2rem;
@@ -87,7 +88,12 @@ input::-webkit-inner-spin-button {
   grid-template-columns: repeat(3, 80px);
   gap: 15px;
 }
-
+/* #submit{
+  background-color: var(--Grey-400);
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+} */
 .tips-page {
   display: flex;
   flex-direction: column;
@@ -103,14 +109,14 @@ input::-webkit-inner-spin-button {
   font-size: 18px;
   letter-spacing: 0.5;
 }
-#reset {
+#reset, #submit{
   border: none;
   padding: 10px 12px;
   background-color: var(--Grey-400);
   transition: background 0.3s ease;
   color: var(--White);
   cursor: pointer;
-  width: 250px;
+  width: 100%;
   border-radius: 4px;
   font-weight: bold;
   font-size: 20px;
@@ -157,8 +163,8 @@ span {
     padding: 1rem;
   }
 }
-@media screen and (max-width: 320px){
-  .tip-percentage-box{
-    grid-template-columns: repeat(2,80px);
+@media screen and (max-width: 320px) {
+  .tip-percentage-box {
+    grid-template-columns: repeat(2, 80px);
   }
 }
